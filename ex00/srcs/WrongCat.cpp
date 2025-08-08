@@ -3,7 +3,7 @@
 WrongCat::WrongCat(void)
 {
 	this->type = "Cat";
-	std::cout << "\e[1;30mWrongCat constructor called\e[0m" << std::endl;
+	std::cout << "\e[1;32mWrongCat constructor called\e[0m" << std::endl;
 	return ;
 }
 
@@ -11,13 +11,13 @@ WrongCat::WrongCat(const WrongCat& WrongCat)
 {
 	if (this != &WrongCat)
 		*this = WrongCat;
-	std::cout << "\e[1;30mWrongCat copy constructor called\e[0m" << std::endl;
+	std::cout << "\e[1;32mWrongCat copy constructor called\e[0m" << std::endl;
 	return ;
 }
 
 WrongCat::~WrongCat(void)
 {
-	std::cout << "\e[1;30mWrongCat destructor called\e[0m" << std::endl;
+	std::cout << "\e[1;32mWrongCat destructor called\e[0m" << std::endl;
 	return ;
 }
 
@@ -29,5 +29,5 @@ WrongCat&	WrongCat::operator=(const WrongCat& WrongCat)
 
 void	WrongCat::makeSound(void) const
 {
-	std::cout << "WOUF" << std::endl;
+	std::cout << "\e[1;36mWOUF\e[0m" << std::endl;
 }
