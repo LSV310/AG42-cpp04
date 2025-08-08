@@ -5,9 +5,6 @@
 
 class Dog: public Animal {
 
-	protected:
-
-
 	public:
 		Dog(void);
 		Dog(const Dog& Dog);

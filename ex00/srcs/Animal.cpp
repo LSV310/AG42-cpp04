@@ -22,7 +22,7 @@ Animal::~Animal(void)
 
 Animal&	Animal::operator=(const Animal& Animal)
 {
-	(void)Animal;
+	this->type = Animal.type;
 	return (*this);
 }
 

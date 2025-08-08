@@ -7,7 +7,7 @@ OBJ_DIR		= ./objs/
 
 CXXFLAGS += -I$(HEADERS)
 
-SRCS		= main.cpp Animal.cpp Dog.cpp Cat.cpp
+SRCS		= main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 OBJS		= $(patsubst %.cpp, $(OBJ_DIR)%.o, $(SRCS))
 DEPS		= $(OBJS:.o=.d)
 

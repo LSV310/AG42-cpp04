@@ -2,8 +2,8 @@
 
 Cat::Cat(void): Animal()
 {
-	this->type = "Dog";
-	std::cout << "" << std::endl;
+	this->type = "Cat";
+	std::cout << "\e[1;30mCat constructor called\e[0m" << std::endl;
 	return ;
 }
 
@@ -11,11 +11,13 @@ Cat::Cat(const Cat& Cat)
 {
 	if (this != &Cat)
 		*this = Cat;
+	std::cout << "\e[1;30mCat copy constructor called\e[0m" << std::endl;
 	return ;
 }
 
 Cat::~Cat(void)
 {
+	std::cout << "\e[1;30mCat destructor called\e[0m" << std::endl;
 	return ;
 }
 

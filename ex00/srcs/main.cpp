@@ -2,6 +2,8 @@
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 
 int main()
 {
@@ -15,5 +17,12 @@ int main()
 	dog->makeSound();
 	cat->makeSound();
 	meta->makeSound();
+
+	const WrongAnimal* wrongMeta = new WrongAnimal();
+	const WrongAnimal* wrongCat = new WrongCat();
+	std::cout << wrongCat->getType() << " " << std::endl;
+	wrongMeta->makeSound();
+	wrongCat->makeSound();
+
 return 0;
 }

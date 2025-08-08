@@ -5,9 +5,6 @@
 
 class Cat: public Animal {
 
-	protected:
-
-
 	public:
 		Cat(void);
 		Cat(const Cat& Cat);
