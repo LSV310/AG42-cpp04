@@ -33,5 +33,5 @@ std::string	WrongAnimal::getType(void) const
 
 void	WrongAnimal::makeSound(void) const
 {
-	std::cout << "*WrongAnimal sound*" << std::endl;
+	std::cout << "\e[1;36m*WrongAnimal sound*\e[0m" << std::endl;
 }

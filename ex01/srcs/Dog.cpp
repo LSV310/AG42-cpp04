@@ -2,7 +2,7 @@
 
 Dog::Dog(void): Animal()
 {
-	std::cout << "\e[1;30mDog constructor called\e[0m" << std::endl;
+	std::cout << "\e[1;33mDog constructor called\e[0m" << std::endl;
 	this->type = "Dog";
 	this->_brain = new Brain();
 	return ;
@@ -10,7 +10,7 @@ Dog::Dog(void): Animal()
 
 Dog::Dog(const Dog& Dog)
 {
-	std::cout << "\e[1;30mDog copy constructor called\e[0m" << std::endl;
+	std::cout << "\e[1;33mDog copy constructor called\e[0m" << std::endl;
 	if (this != &Dog)
 		*this = Dog;
 	return ;
@@ -18,7 +18,7 @@ Dog::Dog(const Dog& Dog)
 
 Dog::~Dog(void)
 {
-	std::cout << "\e[1;30mDog destructor called\e[0m" << std::endl;
+	std::cout << "\e[1;33mDog destructor called\e[0m" << std::endl;
 	delete this->_brain;
 	return ;
 }
@@ -31,5 +31,5 @@ Dog&	Dog::operator=(const Dog& Dog)
 
 void	Dog::makeSound(void) const
 {
-	std::cout << "WOUF" << std::endl;
+	std::cout << "\e[1;36mWOUF\e[0m" << std::endl;
 }
